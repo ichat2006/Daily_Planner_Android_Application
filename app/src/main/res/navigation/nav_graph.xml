@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/title_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_productivityFragment"
+            app:destination="@id/productivityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.myapplication.ui.tasks.TasksFragment"
+        android:label="Tasks" />
+
+    <fragment
+        android:id="@+id/socialFragment"
+        android:name="com.example.myapplication.ui.social.SocialFragment"
+        android:label="Social" />
+
+    <fragment
+        android:id="@+id/productivityFragment"
+        android:name="com.example.myapplication.ui.productivity.ProductivityFragment"
+        android:label="Productivity">
+        <action
+            android:id="@+id/action_productivityFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+        <action
+            android:id="@+id/action_productivityFragment_to_musicPlayerFragment"
+            app:destination="@id/musicPlayerFragment" />
+        <action
+            android:id="@+id/action_productivityFragment_to_gamesFragment"
+            app:destination="@id/gamesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.myapplication.ui.productivity.TimerFragment"
+        android:label="Timer" />
+
+    <fragment
+        android:id="@+id/musicPlayerFragment"
+        android:name="com.example.myapplication.ui.productivity.MusicPlayerFragment"
+        android:label="Music Player" />
+
+    <fragment
+        android:id="@+id/gamesFragment"
+        android:name="com.example.myapplication.ui.productivity.GamesFragment"
+        android:label="Games">
+        <action
+            android:id="@+id/action_games_to_quick_math"
+            app:destination="@id/quickMathFragment" />
+        <action
+            android:id="@+id/action_games_to_word_scramble"
+            app:destination="@id/wordScrambleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quickMathFragment"
+        android:name="com.example.myapplication.ui.productivity.QuickMathFragment"
+        android:label="Quick Math" />
+
+    <fragment
+        android:id="@+id/wordScrambleFragment"
+        android:name="com.example.myapplication.ui.productivity.WordScrambleFragment"
+        android:label="Word Scramble" />
+
+</navigation> 

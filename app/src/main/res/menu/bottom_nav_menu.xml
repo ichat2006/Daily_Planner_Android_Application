@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/ic_task"
+        android:title="Tasks" />
+
+    <item
+        android:id="@+id/socialFragment"
+        android:icon="@drawable/ic_group"
+        android:title="Social" />
+
+    <item
+        android:id="@+id/productivityFragment"
+        android:icon="@drawable/ic_productivity"
+        android:title="Productivity" />
+
+</menu>

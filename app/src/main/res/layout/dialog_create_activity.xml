@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/input_activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activity Title"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/input_activity_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Category"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/category_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_study_groups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study Groups" />
+
+            <RadioButton
+                android:id="@+id/radio_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports" />
+
+            <RadioButton
+                android:id="@+id/radio_clubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clubs" />
+
+            <RadioButton
+                android:id="@+id/radio_hangouts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hangouts" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/input_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Location"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/input_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:hint="Select Date &amp; Time"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/input_max_participants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Maximum Participants"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/input_contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Contact Information"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+</ScrollView> 

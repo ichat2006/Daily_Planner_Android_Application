@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App & Navigation -->
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">
+    com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!-- Tasks -->
+    <string name="no_tasks">No tasks yet!</string>
+    <string name="add_task">Add New Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="task_categories">Task Categories</string>
+    <string name="tasks_list">Tasks List</string>
+
+    <!-- Contacts / Social -->
+    <string name="no_contacts">No contacts yet!</string>
+    <string name="add_contact">Add New Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="contacts_list">Contacts List</string>
+    <string name="social_categories">Social Categories</string>
+
+    <!-- Dialog labels -->
+    <string name="label_name">Name</string>
+    <string name="label_notes">Notes</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_email">Email</string>
+    <string name="label_category">Category:</string>
+
+    <!-- Common UI -->
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="select_due">Select Due Date &amp; Time</string>
+    <string name="select_planned">Select Planned Date &amp; Time</string>
+</resources>
